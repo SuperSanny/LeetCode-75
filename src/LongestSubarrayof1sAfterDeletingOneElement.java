@@ -12,7 +12,9 @@ public class LongestSubarrayof1sAfterDeletingOneElement {
                 c1 = 0;
             }
         }
-        if( c1 + c2 == nums.length) return nums.length - 1;
+        if( c1 + c2 == nums.length) {
+            return nums.length - 1;
+        }
         return Math.max(maxLen, c1 + c2);
     }
     public static void main(String[] args) {
